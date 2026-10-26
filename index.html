@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sodman Creation Hub | Graphic Design & Brand Identity Studio</title>
+    <meta name="description" content="Sodman Creation Hub is a graphic design studio specializing in brand identity, logo design, flyers, social media design, print and packaging.">
+    <meta name="theme-color" content="#FF5A1F">
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+<header class="site-header" id="siteHeader">
+
+    <div class="header-inner">
+        <a href="#home" class="brand">
+            <img src="images/logo/sodman logo.png" alt="sodman logo" width="200px" height="60px">
+        </a>
+
+        <nav class="nav-desktop" aria-label="Primary">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" aria-pressed="false">
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.4 4.4l1.7 1.7M17.9 17.9l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.4 19.6l1.7-1.7M17.9 6.1l1.7-1.7"/></svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.5 14.7A8.5 8.5 0 1 1 9.3 3.5a7 7 0 0 0 11.2 11.2Z"/></svg>
+            </button>
+            <a href="#contact" class="btn btn-primary btn-sm hire-me-desktop">Hire Me</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- Mobile menu with exit button -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+        <nav aria-label="Mobile Primary">
+            <ul>
+                <li style="--i:1"><a href="#home">Home</a></li>
+                <li style="--i:2"><a href="#about">About</a></li>
+                <li style="--i:3"><a href="#portfolio">Portfolio</a></li>
+                <li style="--i:4"><a href="#services">Services</a></li>
+                <li style="--i:5"><a href="#testimonials">Testimonials</a></li>
+                <li style="--i:6"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-nav-footer">
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+            <div class="mobile-socials">
+                <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.9h2.66l.4-3.1h-3.06V8.1c0-.9.25-1.5 1.55-1.5h1.65V3.8C15.9 3.75 15 3.7 13.9 3.7c-2.5 0-4.2 1.5-4.2 4.3v2h-2.7v3.1h2.7V21h3.8Z"/></svg></a>
+                <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+                <a href="#" aria-label="Behance"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h5.3c2.7 0 4.1 1.2 4.1 3.2 0 1.3-.6 2.1-1.8 2.6 1.6.5 2.4 1.5 2.4 3.1 0 2.3-1.7 3.5-4.5 3.5H4V6Zm2.7 5h2.3c1.2 0 1.9-.5 1.9-1.5S10.2 8 9 8H6.7v3Zm0 5.2H9.3c1.4 0 2.1-.6 2.1-1.7s-.7-1.7-2.1-1.7H6.7v3.4ZM15 6.6h4.9v1.3H15V6.6Zm5.7 6.4c-.1-1.9-1.3-3.4-3.5-3.4-2.3 0-3.9 1.6-3.9 4.1 0 2.5 1.5 4.1 4 4.1 1.8 0 3-.8 3.4-2.2h-2.1c-.2.5-.7.8-1.3.8-1 0-1.6-.7-1.7-1.8h5.1v-.6Zm-5.1-.9c.1-.9.7-1.5 1.6-1.5.9 0 1.4.6 1.5 1.5h-3.1Z"/></svg></a>
+                <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM3.5 8.98h3v11.02h-3V8.98Zm6.5 0h2.9v1.5h.04c.4-.76 1.4-1.55 2.9-1.55 3.1 0 3.66 2 3.66 4.6v6.47h-3v-5.74c0-1.37-.02-3.13-1.9-3.13-1.9 0-2.2 1.5-2.2 3.04v5.83h-3V8.98Z"/></svg></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<main id="home">
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-copy" data-reveal>
+                <span class="mono">SODMAN CREATION HUB</span>
+                <h1 class="hero-title">Brand identity that gets a business <span class="hl">noticed, trusted, remembered.</span></h1>
+                <p class="hero-desc">I design logos, brand systems, flyers and social content for founders, churches, events and restaurants who need their business to look as good as it actually is.</p>
+                <div class="hero-cta">
+                    <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+                    <a href="#contact" class="btn btn-outline">Start a Project</a>
+                </div>
+                <div class="hero-specs">
+                    <div class="hero-spec"><span class="mono">Projects</span><strong>100+</strong></div>
+                    <div class="hero-spec"><span class="mono">Clients</span><strong>75+</strong></div>
+                    <div class="hero-spec"><span class="mono">Years</span><strong>5+</strong></div>
+                </div>
+            </div>
+            <div class="hero-visual" data-reveal>
+                <div class="job-ticket crop-marks">
+                    <span class="cm-bl"></span><span class="cm-br"></span>
+                    <div class="job-ticket-top">
+                        <span class="mono">JOB TICKET №014</span>
+                        <span class="job-ticket-mark">SC</span>
+                    </div>
+                    <div class="job-ticket-body">
+                        <div class="job-ticket-row"><span>Client</span><span>Confidential</span></div>
+                        <div class="job-ticket-row"><span>Service</span><span>Brand Identity</span></div>
+                        <div class="job-ticket-row"><span>Deliverable</span><span>Logo + Guidelines</span></div>
+                        <div class="job-ticket-row"><span>Turnaround</span><span>7 Days</span></div>
+                    </div>
+                    <div class="job-ticket-status"><span class="dot"></span> Currently In Progress</div>
+                </div>
+                <div class="swatch-spine" aria-hidden="true">
+                    <div class="sw-1"><span>FF5A1F</span></div>
+                    <div class="sw-2"><span>16161A</span></div>
+                    <div class="sw-3"><span>2B45D4</span></div>
+                    <div class="sw-4"><span>2F6B4F</span></div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-hint" aria-label="Scroll to About">Scroll <span class="arrow"></span></a>
+    </section>
+
+
+    <!-- About -->
+    <section class="about section section-alt" id="about">
+        <div class="section-inner about-grid">
+            <div class="about-visual" data-reveal>
+                <div class="about-frame">
+                    <div class="about-frame-inner">
+                        <img src="images/sodman.jpg" alt="Sodman — Graphic Designer" class="about-photo">
+                    </div>
+                    <span class="about-badge">5+ Yrs<br>Experience</span>
+                </div>
+            </div>
+
+            <div class="about-copy" data-reveal>
+                <span class="eyebrow">About the Studio</span>
+                <h2 class="section-title">Design that works as hard as your brand does</h2>
+                <p class="about-text">Sodman Creation Hub is a one-person graphic design studio built around a simple idea: a brand's visuals should be impossible to ignore, for the right reasons. Over the past five years I've worked with startups, churches, restaurants, event organisers and growing businesses to turn plain ideas into identities people remember.</p>
+                <p class="about-text">Every project starts with the same question — what does this brand need to say, and to whom — before a single shape is placed. The result is design that isn't just good-looking, but does its job: winning attention, building trust, and driving action.</p>
+                <div class="skills-grid">
+                    <span class="skill-chip">Brand Identity</span>
+                    <span class="skill-chip">Logo Design</span>
+                    <span class="skill-chip">Flyer Design</span>
+                    <span class="skill-chip">Social Media</span>
+                    <span class="skill-chip">Business Cards</span>
+                    <span class="skill-chip">Posters</span>
+                    <span class="skill-chip">Banners</span>
+                    <span class="skill-chip">Print & Packaging</span>
+                </div>
+                <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Portfolio -->
+    <section class="portfolio section" id="portfolio">
+        <div class="section-inner">
+            <div class="section-head" data-reveal>
+                <span class="eyebrow">Portfolio</span>
+                <h2 class="section-title">Selected Work</h2>
+                <p class="section-desc">A snapshot of recent projects across branding, print and digital design. Click any project for details.</p>
+            </div>
+
+            <div class="filter-bar" data-reveal role="tablist" aria-label="Filter portfolio by category">
+                <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All Work</button>
+                <button class="filter-btn" data-filter="logo" role="tab" aria-selected="false">Logo Design</button>
+                <button class="filter-btn" data-filter="identity" role="tab" aria-selected="false">Brand Identity</button>
+                <button class="filter-btn" data-filter="flyer" role="tab" aria-selected="false">Flyers</button>
+                <button class="filter-btn" data-filter="social" role="tab" aria-selected="false">Social Media</button>
+                <button class="filter-btn" data-filter="print" role="tab" aria-selected="false">Print &amp; Cards</button>
+            </div>
+
+
+            <div class="masonry" id="masonryGrid">
+                
+                <article class="proj-card" data-cat="logo" data-reveal data-img="images/portfolio/logo/BORGLIFE TECHNICAL SERVICES.jpg" data-title="BORGLIFE TECHNICAL SERVICES" data-cat-label="Logo Design" data-desc="This design was created for Borglife Technical Services to establish a bold and memorable brand presence. The custom icon combines geomentric forms to represent engineering, connectivity and forward-thinking solutions. Paired with a clean, contemporary typeface and a confident blue palette, the logo refklects the company's commitment to delivering dependable technical services with professionalism." data-tone="1" data-letter="N">
+
+                    <div class="proj-media proj-tone-1">
+
+                        <img class="proj-photo" src="images/portfolio/logo/BORGLIFE TECHNICAL SERVICES.jpg" alt="BORGLIFE TECHNICAL SERVICES">
+                        
+                        <div class="proj-overlay">
+                            <span class="view-btn">View Project</span>
+                        </div>
+
+                    </div>
+                    
+                    <div class="proj-body">
+                        <span class="proj-cat">Logo Design</span>
+                        <h3>BORGLIFE TECHNICAL SERVICES</h3>
+                        <p>This design was created for Borglife Technical Services to establish a bold and memorable brand presence. The custom icon combines geomentric forms to represent engineering, connectivity and forward-thinking solutions. Paired with a clean, contemporary typeface and a confident blue palette, the logo refklects the company's commitment to delivering dependable technical services with professionalism.</p>
+                    </div>
+
+                </article>
+
+
+                <!-- <article class="proj-card tall" data-cat="identity" data-reveal data-img="" data-title="Solace Wellness Studio" data-cat-label="Brand Identity" data-desc="Full identity system — logo, palette, typography and stationery — for a boutique wellness studio." data-tone="2" data-letter="S">
+
+                    <div class="proj-media proj-tone-2"><img class="proj-photo" src="images/portfolio/logo/BORGLIFE TECHNICAL SERVICES.jpg" alt="Solace Wellness Studio" loading="lazy"><span class="proj-mono-mark">S</span><div class="proj-overlay"><span class="view-btn">View Project</span></div></div>
+                    <div class="proj-body"><span class="proj-cat">Brand Identity</span><h3>Solace Wellness Studio</h3><p>Full identity system for a boutique wellness studio.</p></div>
+                </article> -->
+
+
+                <article class="proj-card" data-cat="flyer" data-reveal data-img="images/portfolio/flyer/event-flyer.jpg" data-title="Afrobeat Nights Festival" data-cat-label="Event Flyer" data-desc="High-energy flyer and social teaser set for a three-day outdoor music festival." data-tone="3" data-letter="A">
+                    <div class="proj-media proj-tone-3"><img class="proj-photo" src="images/portfolio/flyer/event-flyer.jpg" alt="Afrobeat Nights Festival"">
+                        <div class="proj-overlay">
+                            <span class="view-btn">View Project</span>
+                        </div></div>
+                    <div class="proj-body"><span class="proj-cat">Event Flyer</span><h3>Afrobeat Nights Festival</h3><p>High-energy flyer set for a three-day music festival.</p></div>
+                </article>
+
+
+                <!-- <article class="proj-card" data-cat="flyer" data-reveal data-img="" data-title="Prime Realty Open House" data-cat-label="Business Flyer" data-desc="Clean, trustworthy flyer design driving foot traffic to a weekend open-house listing." data-tone="5" data-letter="P">
+                    <div class="proj-media proj-tone-5"><img class="proj-photo" src="" alt="Prime Realty Open House" loading="lazy"><span class="proj-mono-mark">P</span><div class="proj-overlay"><span class="view-btn">View Project</span></div></div>
+                    <div class="proj-body"><span class="proj-cat">Business Flyer</span><h3>Prime Realty Open House</h3><p>Flyer design for a weekend open-house listing.</p></div>
+                </article> -->
+
+
+                <article class="proj-card tall" data-cat="print" data-reveal data-img="images/portfolio/flyer/DAFEQUEEN KITCHEN.jpg" data-title="Spice Route Menu Rebrand" data-cat-label="Restaurant Design" data-desc="Full menu system redesign balancing appetite appeal with fast in-store legibility." data-tone="1" data-letter="R">
+                    <div class="proj-media proj-tone-1"><img class="proj-photo" src="images/portfolio/flyer/DAFEQUEEN KITCHEN.jpg" alt="Spice Route Menu Rebrand"><div class="proj-overlay"><span class="view-btn">View Project</span></div></div>
+                    <div class="proj-body"><span class="proj-cat">Restaurant Design</span><h3>Spice Route Menu Rebrand</h3><p>Menu system redesign for a restaurant.</p></div>
+                </article>
+
+
+                <!-- <article class="proj-card" data-cat="social" data-reveal data-img="" data-title="Lumo Skincare Launch" data-cat-label="Ad Creative" data-desc="Launch-day ad creative for a skincare product drop across paid social placements." data-tone="2" data-letter="L">
+                    <div class="proj-media proj-tone-2"><img class="proj-photo" src="" alt="Lumo Skincare Launch" loading="lazy"><span class="proj-mono-mark">L</span><div class="proj-overlay"><span class="view-btn">View Project</span></div></div>
+                    <div class="proj-body"><span class="proj-cat">Ad Creative</span><h3>Lumo Skincare Launch</h3><p>Launch-day ad creative for a skincare product.</p></div>
+                </article> -->
+
+
+                <article class="proj-card tall" data-cat="social" data-reveal data-img="images/portfolio/social_media/BORGLIFE RAMADAN 04.jpg" data-title="Bloom Boutique Feed Kit" data-cat-label="Social Media" data-desc="A cohesive, on-brand content kit — 20+ templates — for a fashion boutique's Instagram feed." data-tone="3" data-letter="B">
+                    <div class="proj-media proj-tone-3"><img class="proj-photo" src="images/portfolio/social_media/BORGLIFE RAMADAN 04.jpg" alt="Bloom Boutique Feed Kit"><span class="proj-mono-mark">B</span><div class="proj-overlay"><span class="view-btn">View Project</span></div></div>
+                    <div class="proj-body"><span class="proj-cat">Social Media</span><h3>Bloom Boutique Feed Kit</h3><p>A 20+ template content kit for Instagram.</p></div>
+                </article>
+
+
+                <!-- <article class="proj-card" data-cat="print" data-reveal data-img="" data-title="Vertex Architecture Studio" data-cat-label="Business Cards" data-desc="Minimal, textured business card design reflecting a structural, precision-led studio." data-tone="4" data-letter="V">
+                    <div class="proj-media proj-tone-4"><img class="proj-photo" src="" alt="Vertex Architecture Studio" loading="lazy"><span class="proj-mono-mark">V</span><div class="proj-overlay"><span class="view-btn">View Project</span></div></div>
+                    <div class="proj-body"><span class="proj-cat">Business Cards</span><h3>Vertex Architecture Studio</h3><p>Minimal business card design for a design studio.</p></div>
+                </article> -->
+
+
+                <!-- <article class="proj-card tall" data-cat="print" data-reveal data-img="" data-title="TechSummit 2025" data-cat-label="Banner Design" data-desc="Large-format web and stage banner set for a two-day technology conference." data-tone="5" data-letter="T">
+                    <div class="proj-media proj-tone-5"><img class="proj-photo" src="" alt="TechSummit 2025" loading="lazy"><span class="proj-mono-mark">T</span><div class="proj-overlay"><span class="view-btn">View Project</span></div></div>
+                    <div class="proj-body"><span class="proj-cat">Banner Design</span><h3>TechSummit 2025</h3><p>Web and stage banner set for a tech conference.</p></div>
+                </article> -->
+
+
+                <article class="proj-card" data-cat="print" data-reveal data-img="images/portfolio/certificates/CDS CERTIFICATE.jpg" data-title="Global Leaders Award" data-cat-label="Certificates" data-desc="Formal, presentation-ready certificate template for an annual leadership programme." data-tone="1" data-letter="C">
+                    <div class="proj-media proj-tone-1"><img class="proj-photo" src="images/portfolio/certificates/CDS CERTIFICATE.jpg" alt="Global Leaders Award"><div class="proj-overlay"><span class="view-btn">View Project</span></div></div>
+                    <div class="proj-body"><span class="proj-cat">Certificates</span><h3>Global Leaders Award</h3><p>Certificate template for a leadership programme.</p></div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services -->
+    <section class="services section section-alt" id="services">
+        <div class="section-inner">
+            <div class="section-head" data-reveal>
+                <span class="eyebrow">Services</span>
+                <h2 class="section-title">What I can create for you</h2>
+                <p class="section-desc">From a single logo to a full brand rollout, our design services are built around your business goals.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-reveal><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.2 2"/></svg></span><h3>Logo Design</h3><p>Distinctive marks built to work everywhere — from favicons to billboards.</p></div>
+                <div class="service-card" data-reveal><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><h3>Flyer Design</h3><p>Event, church, business and promo flyers designed to grab attention fast.</p></div>
+                <div class="service-card" data-reveal><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17" cy="7" r="0.8" fill="currentColor" stroke="none"/></svg></span><h3>Social Media Design</h3><p>On-brand post templates, story kits and ad creative for every platform.</p></div>
+                <div class="service-card" data-reveal><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12a8 8 0 1 1 8 8"/><path d="M4 12l4-4M4 12l4 4"/></svg></span><h3>Brand Identity</h3><p>Complete visual systems — logo, palette, type, guidelines — built to scale.</p></div>
+                <div class="service-card" data-reveal><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9V4h12v5M6 18h12M7 9h10a2 2 0 0 1 2 2v5H5v-5a2 2 0 0 1 2-2Z"/></svg></span><h3>Print Design</h3><p>Brochures, posters, menus and marketing collateral, press-ready.</p></div>
+                <div class="service-card" data-reveal><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 8l-9-5-9 5 9 5 9-5Z"/><path d="M3 8v8l9 5 9-5V8M12 13v8"/></svg></span><h3>Packaging Design</h3><p>Shelf-ready packaging that makes a product impossible to scroll past.</p></div>
+                <div class="service-card" data-reveal><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="6" width="19" height="12" rx="2"/><path d="M2.5 10h19M6 14h4"/></svg></span><h3>Business Cards</h3><p>Tactile, memorable cards that make the right first impression.</p></div>
+                <div class="service-card" data-reveal><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="10" rx="1.5"/><path d="M3 10.5h18"/></svg></span><h3>Banner Design</h3><p>Web, stage and outdoor banners sized and styled to convert.</p></div>
+                <div class="service-card" data-reveal><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="14" height="14" rx="1.5"/><path d="M17 9.5l4-2.5v10l-4-2.5"/></svg></span><h3>Motion Graphics</h3><p>Short animated stings and social clips that bring a brand to life.</p></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Stats (always dark) -->
+    <section class="stats section" id="why">
+        <div class="section-inner">
+            <div class="section-head light" data-reveal>
+                <span class="eyebrow eyebrow-light">Why Work With Me</span>
+                <h2 class="section-title">Results, not just pretty pictures</h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card" data-reveal><span class="stat-num" data-count="100" data-suffix="+">0</span><span class="stat-label">Projects Completed</span></div>
+                <div class="stat-card" data-reveal><span class="stat-num" data-count="75" data-suffix="+">0</span><span class="stat-label">Happy Clients</span></div>
+                <div class="stat-card" data-reveal><span class="stat-num" data-count="5" data-suffix="+">0</span><span class="stat-label">Years Experience</span></div>
+                <div class="stat-card" data-reveal><span class="stat-num" data-count="48" data-suffix="h">0</span><span class="stat-label">Fast Delivery Turnaround</span></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials -->
+    <section class="testimonials section" id="testimonials">
+        <div class="section-inner">
+            <div class="section-head" data-reveal>
+                <span class="eyebrow">Testimonials</span>
+                <h2 class="section-title">What clients say</h2>
+            </div>
+            <div class="testi-grid">
+                <div class="testi-card" data-reveal>
+                    <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <p>"Sodman turned a vague idea into a logo and identity that finally feels like us. Communication was clear from brief to final files."</p>
+                    <div class="testi-person"><span class="avatar" style="--a:#FF5A1F">AK</span><div><strong>Amara Kalu</strong><span>Founder, Nimbus Coffee Co.</span></div></div>
+                </div>
+                <div class="testi-card" data-reveal>
+                    <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <p>"Our event flyer got more shares than any promo we'd run before. Fast turnaround, and every revision came back sharper."</p>
+                    <div class="testi-person"><span class="avatar" style="--a:#16161A">TO</span><div><strong>Tunde Okafor</strong><span>Events Director, Afrobeat Nights</span></div></div>
+                </div>
+                <div class="testi-card" data-reveal>
+                    <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <p>"Professional, patient and genuinely talented. The brand guidelines document alone saved our internal team weeks of guesswork."</p>
+                    <div class="testi-person"><span class="avatar" style="--a:#2B45D4">RM</span><div><strong>Rachel Marsh</strong><span>Owner, Solace Wellness Studio</span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact section section-alt" id="contact">
+        <div class="section-inner contact-grid">
+            <div class="contact-info" data-reveal>
+                <span class="eyebrow">Contact</span>
+                <h2 class="section-title">Let's build something worth noticing</h2>
+                <p class="section-desc">Tell me about your project</p>
+                <ul class="contact-list">
+                    <li><span class="contact-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6.5h18v11H3v-11Z"/><path d="M3 6.5l9 6.5 9-6.5"/></svg></span><div><strong>Email</strong><a href="mailto:sodiqahmed2016@gmail.com">sodiqahmed2016@gmail.com</a></div></li>
+                    <li><span class="contact-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4.5h4l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5v4c-8 0-15-7-15-15Z"/></svg></span><div><strong>Phone</strong><a href="tel:+2347032396520">+234 703 239 6520</a></div></li>
+                </ul>
+                <a href="https://wa.me/2347032396520" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.9-1.3A9.5 9.5 0 1 0 12 2.5Zm0 17.3a7.7 7.7 0 0 1-3.9-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A7.8 7.8 0 1 1 12 19.8Zm4.3-5.8c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.1-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4-.1-.1-.5-1.3-.7-1.8-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.5-.3Z"/></svg>
+                    Chat on WhatsApp
+                </a>
+                <div class="social-row">
+                    <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.9h2.66l.4-3.1h-3.06V8.1c0-.9.25-1.5 1.55-1.5h1.65V3.8C15.9 3.75 15 3.7 13.9 3.7c-2.5 0-4.2 1.5-4.2 4.3v2h-2.7v3.1h2.7V21h3.8Z"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+                    <a href="#" aria-label="Behance"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h5.3c2.7 0 4.1 1.2 4.1 3.2 0 1.3-.6 2.1-1.8 2.6 1.6.5 2.4 1.5 2.4 3.1 0 2.3-1.7 3.5-4.5 3.5H4V6Zm2.7 5h2.3c1.2 0 1.9-.5 1.9-1.5S10.2 8 9 8H6.7v3Zm0 5.2H9.3c1.4 0 2.1-.6 2.1-1.7s-.7-1.7-2.1-1.7H6.7v3.4ZM15 6.6h4.9v1.3H15V6.6Zm5.7 6.4c-.1-1.9-1.3-3.4-3.5-3.4-2.3 0-3.9 1.6-3.9 4.1 0 2.5 1.5 4.1 4 4.1 1.8 0 3-.8 3.4-2.2h-2.1c-.2.5-.7.8-1.3.8-1 0-1.6-.7-1.7-1.8h5.1v-.6Zm-5.1-.9c.1-.9.7-1.5 1.6-1.5.9 0 1.4.6 1.5 1.5h-3.1Z"/></svg></a>
+                    <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM3.5 8.98h3v11.02h-3V8.98Zm6.5 0h2.9v1.5h.04c.4-.76 1.4-1.55 2.9-1.55 3.1 0 3.66 2 3.66 4.6v6.47h-3v-5.74c0-1.37-.02-3.13-1.9-3.13-1.9 0-2.2 1.5-2.2 3.04v5.83h-3V8.98Z"/></svg></a>
+                </div>
+            </div>
+
+            <form class="contact-form" data-reveal id="contactForm" novalidate>
+                <div class="form-row">
+                    <div class="form-field"><label for="fName">Name</label><input type="text" id="fName" name="name" required placeholder="Your full name"></div>
+                    <div class="form-field"><label for="fEmail">Email</label><input type="email" id="fEmail" name="email" required placeholder="you@email.com"></div>
+                </div>
+                <div class="form-field"><label for="fSubject">Subject</label><input type="text" id="fSubject" name="subject" placeholder="What are you looking for?"></div>
+                <div class="form-field"><label for="fMessage">Message</label><textarea id="fMessage" name="message" rows="5" required placeholder="Tell me a bit about your project..."></textarea></div>
+                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+            
+        </div>
+    </section>
+</main>
+
+
+<!-- Project Modal -->
+<div class="project-modal" id="projectModal" aria-hidden="true">
+    <div class="project-modal-backdrop"></div>
+    <div class="project-modal-content">
+        <button class="project-modal-close" aria-label="Close project">&times;</button>
+        <div class="project-modal-image" id="modalImageWrap">
+            <img src="" alt="" id="modalImage">
+            <span class="modal-mark" id="modalMark"></span>
+        </div>
+        <div class="project-modal-body">
+            <span class="proj-cat" id="modalCat"></span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDesc"></p>
+            <div class="project-modal-meta">
+                <div><span class="mono">Category</span><strong id="modalCatMeta"></strong></div>
+                <div><span class="mono">Status</span><strong>Completed</strong></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer (always dark) -->
+<footer class="site-footer">
+
+    <div class="footer-inner">
+        <div class="footer-col footer-brand">
+            <a href="#home" class="brand"><img src="images/logo/sodman logo.png" alt="sodman logo" width="200px" height="60px"></a>
+                <p>We help businesses build memorable brands through creative design, visual identity and digital solutions.</p>
+            <div class="social-row">
+                <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.9h2.66l.4-3.1h-3.06V8.1c0-.9.25-1.5 1.55-1.5h1.65V3.8C15.9 3.75 15 3.7 13.9 3.7c-2.5 0-4.2 1.5-4.2 4.3v2h-2.7v3.1h2.7V21h3.8Z"/></svg></a>
+                <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+                <a href="#" aria-label="Behance"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h5.3c2.7 0 4.1 1.2 4.1 3.2 0 1.3-.6 2.1-1.8 2.6 1.6.5 2.4 1.5 2.4 3.1 0 2.3-1.7 3.5-4.5 3.5H4V6Zm2.7 5h2.3c1.2 0 1.9-.5 1.9-1.5S10.2 8 9 8H6.7v3Zm0 5.2H9.3c1.4 0 2.1-.6 2.1-1.7s-.7-1.7-2.1-1.7H6.7v3.4ZM15 6.6h4.9v1.3H15V6.6Zm5.7 6.4c-.1-1.9-1.3-3.4-3.5-3.4-2.3 0-3.9 1.6-3.9 4.1 0 2.5 1.5 4.1 4 4.1 1.8 0 3-.8 3.4-2.2h-2.1c-.2.5-.7.8-1.3.8-1 0-1.6-.7-1.7-1.8h5.1v-.6Zm-5.1-.9c.1-.9.7-1.5 1.6-1.5.9 0 1.4.6 1.5 1.5h-3.1Z"/></svg></a>
+                <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM3.5 8.98h3v11.02h-3V8.98Zm6.5 0h2.9v1.5h.04c.4-.76 1.4-1.55 2.9-1.55 3.1 0 3.66 2 3.66 4.6v6.47h-3v-5.74c0-1.37-.02-3.13-1.9-3.13-1.9 0-2.2 1.5-2.2 3.04v5.83h-3V8.98Z"/></svg></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="#services">Logo Design</a></li>
+                <li><a href="#services">Brand Identity</a></li>
+                <li><a href="#services">Flyer Design</a></li>
+                <li><a href="#services">Social Media Design</a></li>
+                <li><a href="#services">Print &amp; Packaging</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Get in Touch</h4>
+            <ul>
+                <li><a href="mailto:sodiqahmed2016@gmail.com">mailto:sodiqahmed2016@gmail.com</a></li>
+                <li><a href="tel:+2347032396520">+234 703 239 6520</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Sodman Creation Hub. All rights reserved.</p>
+    </div>
+
+    <div class="marquee-wrap" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Sodman Creation Hub&nbsp;</span><span>Sodman Creation Hub&nbsp;</span>
+            <span>Sodman Creation Hub&nbsp;</span><span>Sodman Creation Hub&nbsp;</span>
+        </div>
+    </div>
+
+</footer>
+
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/2347032396520?text=Hello%20Sodman,%20I%27m%20interested%20in%20your%20design%20services" 
+    class="whatsapp-float" 
+    target="_blank" 
+    rel="noopener" 
+    aria-label="Chat on WhatsApp">
+        <img src="icons/whatsapp.svg" 
+        alt="WhatsApp" 
+        width="26" 
+        height="26">
+</a>
+
+
+<!-- Back to Top -->
+<button 
+    class="back-to-top" 
+    id="backToTop" 
+    aria-label="Back to top">
+        <img src="icons/arrow.svg" 
+            alt="arrow" 
+            width="26" 
+            height="26"
+        >
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
